@@ -17,6 +17,7 @@ module.exports = {
   devdep: [
     '@commitlint/cli',
     '@commitlint/config-conventional',
+    'babel-plugin-import',
     'commitizen',
     'cz-conventional-changelog',
     'eslint',
