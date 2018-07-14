@@ -5,6 +5,7 @@
   "main": "src/index.jsx",
   "scripts": {
     "preinstall": "autod",
+    "relay": "relay-compiler --src ./src --schema ./schema.graphql --extensions js jsx",
     "build": "cross-env NODE_ENV=development react-app-rewired build",
     "start": "cross-env NODE_ENV=development react-app-rewired start",
     "test": "cross-env NODE_ENV=test react-app-rewired test --coverage --env=jsdom"
