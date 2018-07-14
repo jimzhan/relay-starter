@@ -3,12 +3,14 @@ module.exports = {
   prefix: '~',
   devprefix: '^',
   dep: [
+    'antd',
     'browserslist',
     'cross-env',
-    'parcel',
     'per-env',
     'react',
     'react-dom',
+    'react-app-rewired',
+    'react-app-rewire-less',
     'rimraf',
   ],
   devdep: [
