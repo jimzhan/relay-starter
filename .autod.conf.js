@@ -11,6 +11,7 @@ module.exports = {
     'react-dom',
     'react-app-rewired',
     'react-app-rewire-less',
+    'react-scripts',
     'rimraf',
   ],
   devdep: [
