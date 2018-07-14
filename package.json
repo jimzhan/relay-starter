@@ -5,12 +5,9 @@
   "main": "src/index.jsx",
   "scripts": {
     "preinstall": "autod",
-    "pretest": "npm run clean && npm run lint",
-    "clean": "npx rimraf coverage dist",
-    "lint": "npx eslint --ext .jsx,.js src",
     "build": "cross-env NODE_ENV=development react-app-rewired build",
     "start": "cross-env NODE_ENV=development react-app-rewired start",
-    "test": "cross-env NODE_ENV=test jest --no-cache"
+    "test": "cross-env NODE_ENV=test react-app-rewired test --coverage --env=jsdom"
   },
   "repository": {
     "type": "git",
