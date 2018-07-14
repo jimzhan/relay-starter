@@ -5,7 +5,12 @@
   "main": "src/index.jsx",
   "scripts": {
     "preinstall": "autod",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "pretest": "npm run clean && npm run lint",
+    "clean": "npx rimraf coverage dist",
+    "lint": "npx eslint --ext .jsx,.js src",
+    "build": "NODE_ENV=production npx parcel build --no-cache public/index.html --public-url ./",
+    "start": "NODE_ENV=development npx parcel --no-cache public/index.html",
+    "test": "cross-env NODE_ENV=test jest --no-cache"
   },
   "repository": {
     "type": "git",
