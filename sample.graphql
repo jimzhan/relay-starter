@@ -7,10 +7,6 @@ type User implements Node {
   name: String!
 }
 
-type Viewer {
-  User(id: ID): User
-}
-
 type Query {
   User(id: ID): User!
 }

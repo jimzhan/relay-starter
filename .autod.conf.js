@@ -13,6 +13,7 @@ module.exports = {
     'react-dom',
     'react-app-rewired',
     'react-app-rewire-less',
+    'react-loadable',
     'react-relay',
     'react-scripts',
     'relay-compiler',
