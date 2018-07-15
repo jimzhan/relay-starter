@@ -4,6 +4,7 @@ module.exports = {
   devprefix: '^',
   dep: [
     'antd',
+    'autoprefixer',
     'browserslist',
     'cross-env',
     'graphql',
